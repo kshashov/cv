@@ -30,7 +30,7 @@ Tools	| JetBrains IntelliJ IDEA, JetBrains Rider, MS Visual Studio, MS Visual St
 | *Technologies & Libraries* | Java 11, Spring Boot 2.2, Vaadin 14 |
 | *Development Tools* | IntelliJ IDEA, Maven, Tomcat |
 | --- | --- |
-| **Calendar Planner** | Architectural design; Integration with an existing system, development of custom Vaadin components |
+| **Calendar Planner** | Dashboard for managing budget allocation |
 | *Responsibilities* | Architectural design; Integration with an existing system, development of custom Vaadin components |
 | *Technologies & Libraries* | Java 11, Spring Boot 2.1, Vaadin 12-14 |
 | *Development Tools* | IntelliJ IDEA, Maven, Tomcat |
