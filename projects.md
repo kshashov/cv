@@ -1,7 +1,7 @@
 # Projects
 Unfortunately, my commercial experience has nothing to do with open source, so I can only share my home projects created while studying some technologies.
 
-## Spring Boot Starter Telegram ([maven](https://search.maven.org/search?q=a:spring-boot-starter-telegram), [repo](https://github.com/kshashov/spring-boot-starter-telegram))
+## Telegram Spring Boot Starter ([maven](https://search.maven.org/search?q=a:spring-boot-starter-telegram), [repo](https://github.com/kshashov/spring-boot-starter-telegram))
 
 Provides an ability to create Telegram bots in Spring MVC style. Supports webhooks and long polling, sessions, custom arguments for contorller methods. 
 
@@ -26,15 +26,50 @@ Some implementation details:
         ```java
         @BotPathVariable("name") String userName
         ```
-* I used `Javalin` server to handler Telegram webhooks in case this option is chosen in the bot settings
+* I use `Javalin` server to handler Telegram webhooks in case this option is chosen in the bot settings
 * Unit tests with JUnit5 + Mockito. 
 I covered 50% of the library. Mostly, it is the reflection usages, built-in resolvers and handlers container. I didn't create the integration Spring tests
-* Jmx. I used the `io.dropwizard.metrics.io.dropwizard.metrics` library to expose some important metrics
+* Jmx. I use the `io.dropwizard.metrics.io.dropwizard.metrics` library to expose some important metrics
 * The API is covered by javadocs 
 * CI/CD
     * Builds: CircleCI, Travis CI
     * Code coverage: Jacoco -> Codecov
     * Deployment: Maven Central, JitPack
+
+## Scoped Methods Spring Boot Starter ([maven](https://search.maven.org/search?q=a:scoped-methods-spring-boot-starter), [repo](https://github.com/kshashov/scoped-methods))
+
+Provides an ability to use custom scopes over Spring bean methods. Supports both proxy and aspectj interception approaches, meta-annotations and overriden methods.
+
+```java
+@Service
+public class Service1 {
+
+    @ScopedMethod("inner")
+    public void doSomething() {
+        log.info(ScopedMethodsHolder.getCurrent());
+    }
+}
+
+@Service
+public class Service2 {
+
+    @ScopedMethod("outer0")
+    @ScopedMethod("outer")
+    public void doSomething() {
+        log.info(ScopedMethodsHolder.getCurrent());    // outer
+        service1.doSomething();                        // inner
+        log.info(ScopedMethodsHolder.getCurrent());    // outer
+    }
+}
+```
+
+* Spring Boot
+  * Configuration-related features
+    *  [ImportSelector](https://github.com/kshashov/scoped-methods/blob/main/src/main/java/io/github/kshashov/scopedmethods/ScopedMethodsConfigurationSelector.java) Imports target configurations based on the `EnableScopedMethods` annotation parameters
+    * [ImportAware](https://github.com/kshashov/scoped-methods/blob/main/src/main/java/io/github/kshashov/scopedmethods/BaseScopedMethodConfiguration.java) Populate additional settings based based on `EnableScopedMethods` annotation parameters
+  * [DefaultPointcutAdvisor](https://github.com/kshashov/scoped-methods/blob/main/src/main/java/io/github/kshashov/scopedmethods/ProxyScopedMethodsConfiguration.java) Catches all invocations of `ScopedMethod` annotated methods. Starts scope before target method invocation and stops it after.
+* [AspectJ](https://github.com/kshashov/scoped-methods/blob/main/src/main/java/io/github/kshashov/scopedmethods/ScopedMethodAspect.java) The `AspectJ` analog of the custom `DefaultPointcutAdvisor` 
+* Unit test with JUnit5. Therea are [plain](https://github.com/kshashov/scoped-methods/blob/main/src/test/java/io/github/kshashov/scopedmethods/ScopedMethodsManagerTest.java) and [integration](https://github.com/kshashov/scoped-methods/tree/main/src/test/java/io/github/kshashov/scopedmethods/integration/proxy) unit tests. The code have `>80%` coverage.  
 
 ## Translate It ([demo](https://kshashov.github.io/translate-it/#/), [front](https://github.com/kshashov/translate-it), [back](https://github.com/kshashov/Translates-API))
 Simple analog of [writing section of Puzzle English](https://puzzle-english.com/writing/verb-tenses). Each user has role with permissions allowing him to modify other's user roles and solve, create, modify or delete exercises. The exercise can be solved by gradually translating each phrase from the source language to the target language. 
