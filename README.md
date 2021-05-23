@@ -10,19 +10,24 @@
   * https://stackoverflow.com/users/10059717
 * Russia, Samara. Prefer remote work
 
+## Skills
+
 |  |  |
 | - | - |
-Operating systems |	Microsoft Windows, Fedora Workstation 
 Programming Languages |	Java, C#, SQL; acquainted with JavaScript, Dart
-Technologies & Libraries |	Spring Boot, JavaFX, Android, Junit, Mockito; .NET Framework, .NET Core; Flutter; VueJS
+Fraeworks & Libraries |	Spring Boot, JavaFX, Android, Junit, Mockito; .NET Framework, .NET Core; Flutter; VueJS
 Databases |	PostgreSQL, MS SQL Server 
-Services	| Jira, GitLab, GitHub, Travis CI
-Tools	| JetBrains IntelliJ IDEA, JetBrains Rider, MS Visual Studio, MS Visual Studio Code, MS SQL Management Studio, Apache Tomcat, Apache Maven
+Services	| GitLab, GitHub, Travis CI, Jira, Youtrack
+Tools	| JetBrains IntelliJ IDEA, JetBrains Rider, MS Visual Studio, MS Visual Studio Code, MS SQL Management Studio, Apache Tomcat
+
+#### Detailed
+
+TODO
 
 ## Summary
-Senior Java developer with 5+ years of commercial experience. I try to follow development trends and often learn new languages and technologies. In addition to Java backed development I had experience in native Android, cross-platform development on Flutter, backend .Net/.Net Core development, and frontend development on VueJS. At the moment, I am interested in Java development, but I will consider switching to Kotlin or even full stack development. 
+Senior Java developer with 5+ years of commercial experience. I try to follow development trends and often learn new languages and technologies. In addition to Java backed development I had experience in native Android, cross-platform development on Flutter, backend .Net/.Net Core development, and frontend development on VueJS. At the moment, I am interested in Java/Kotlin development, but I am ready to consider full stack development in case of interesting offer. 
 
-In the last months, in addition to development, I have led a small team of two Java developers, a front-end developer and a kua. Since we had English-speaking customers, all technical discussions were with me (speaking at standups and writing in Jira/emails).
+In the last year, in addition to development, I have led a small team of two Java developers, front-end developer and QA. We had English-speaking customers so all technical discussions were on English (speaking at standups and writing in Jira/emails).
 
 In my free time I play computer games, improve my knowledge in English, study the piano from scratch.
 

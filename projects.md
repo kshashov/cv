@@ -1,6 +1,56 @@
 # Projects
 Unfortunately, my commercial experience has nothing to do with open source, so I can only share my home projects created while studying some technologies.
 
+## Vaadin Compose UI Framework ([demo](https://vaadin-compose.herokuapp.com/), [maven](https://jitpack.io/#kshashov/vaadin-compose), [repo](https://github.com/kshashov/vaadin-compose))
+
+Provides an ability to build web pages on Kotlin in reactive way as if you are working with Flutter, Vue.js, React or other modern UI frameworks. Shortly, this is a combination of [Flutter](https://flutter.dev/) and [Vaadin Flow](https://vaadin.com/flow) frameworks.
+
+> The main goal was to implement the primitive copy of Flutter's architecture, where the developer can simply declare reactive interfaces, and the framework reuses the already created render components between UI updates.
+
+![Counter](https://github.com/kshashov/vaadin-compose/blob/main/img/vaadin-compose-counter.gif?raw=true "Counter")
+
+```kotlin
+@Route("counter")
+class Counter : BaseComposablePage() {
+
+   override fun build(context: BuildContext) = MainWidget()
+
+   class MainWidget : StatefulWidget() {
+      override fun createState() = MainState()
+
+      class MainState : StatefulWidget.WidgetState<MainWidget>() {
+         private var counter: Int = 0
+
+         override fun build(context: BuildContext): Widget {
+            return Container(
+               direction = FlexLayout.FlexDirection.COLUMN,
+               childs = listOf(
+                  Label("Counter: $counter") {
+                     style {
+                        set("font-weight", "bold")
+                     }
+                  },
+                  Button("+1", {
+                     setState { counter++ }
+                  })
+               )
+            )
+         }
+      }
+   }
+}
+```
+
+* Kotlin
+  * Custom DSL
+* Vaadin at the render side
+* RxJava
+* CI/CD
+  * Builds: Travis CI
+  * Code coverage: Jacoco -> Codecov
+  * Deployment: Github Packages, JitPack
+  * Demo deployment: Heroku
+
 ## Telegram Spring Boot Starter ([maven](https://search.maven.org/search?q=a:spring-boot-starter-telegram), [repo](https://github.com/kshashov/spring-boot-starter-telegram))
 
 Provides an ability to create Telegram bots in Spring MVC style. Supports webhooks and long polling, sessions, custom arguments for contorller methods. 
@@ -17,7 +67,7 @@ Provides an ability to create Telegram bots in Spring MVC style. Supports webhoo
         return "Hello, " + userName;
     }
 ```
-Some implementation details:
+
 * Spring Boot
     * [Custom scope](https://github.com/kshashov/spring-boot-starter-telegram/blob/master/src/main/java/com/github/kshashov/telegram/TelegramScope.java) The scope stores beans in the cache by the chat id. During the request processing the chat id is stores in the `ThreadLocal` variable.
     * [Auto-configuration](https://github.com/kshashov/spring-boot-starter-telegram/blob/master/src/main/java/com/github/kshashov/telegram/TelegramAutoConfiguration.java) The library is implemented as a Spring Boot Starter, so it is activated as soon as the project specifies a dependency on this project. The configuration prepare bot's configurations, declares all necessary beans, adds custom scope to BFPP, defines application listener that starts and stops the executor service service
@@ -70,6 +120,10 @@ public class Service2 {
   * [DefaultPointcutAdvisor](https://github.com/kshashov/scoped-methods/blob/main/src/main/java/io/github/kshashov/scopedmethods/ProxyScopedMethodsConfiguration.java) Catches all invocations of `ScopedMethod` annotated methods. Starts scope before target method invocation and stops it after.
 * [AspectJ](https://github.com/kshashov/scoped-methods/blob/main/src/main/java/io/github/kshashov/scopedmethods/ScopedMethodAspect.java) The `AspectJ` analog of the custom `DefaultPointcutAdvisor` 
 * Unit test with JUnit5. Therea are [plain](https://github.com/kshashov/scoped-methods/blob/main/src/test/java/io/github/kshashov/scopedmethods/ScopedMethodsManagerTest.java) and [integration](https://github.com/kshashov/scoped-methods/tree/main/src/test/java/io/github/kshashov/scopedmethods/integration/proxy) unit tests. The code have `>80%` coverage.  
+* CI/CD
+    * Builds: CircleCI
+    * Code coverage: Jacoco -> Codecov
+    * Deployment: Maven Central, JitPack
 
 ## Translate It ([demo](https://kshashov.github.io/translate-it/#/), [front](https://github.com/kshashov/translate-it), [back](https://github.com/kshashov/Translates-API))
 Simple analog of [writing section of Puzzle English](https://puzzle-english.com/writing/verb-tenses). Each user has role with permissions allowing him to modify other's user roles and solve, create, modify or delete exercises. The exercise can be solved by gradually translating each phrase from the source language to the target language. 
@@ -131,8 +185,11 @@ The application is a simple time tracker. All users can create projects, bind ot
     * Deployment: Heroku
 
 ## Cloud Experiments ([repo](https://github.com/kshashov/cloud-experiments))
+
 In fact, this is not a project at all, it is just a collection of sub-projects using various Spring Cloud features.
+
 > The main goal was to try the Spring Cloud stack.
+
 * [Eureka](https://github.com/kshashov/cloud-experiments/tree/main/eureka)
 * [Config](https://github.com/kshashov/cloud-experiments/tree/main/config). I use 'discovery first' approach, so config microservice is discovered by other services via Eureka
 * [Gateway](https://github.com/kshashov/cloud-experiments/blob/main/gateway). I [aggregate](https://github.com/kshashov/cloud-experiments/blob/main/gateway/src/main/java/com/github/kshashov/cloud/gateway/GatewayApplication.java) internal APIs in the gateway Swagger
@@ -149,6 +206,7 @@ In fact, this is not a project at all, it is just a collection of sub-projects u
   * [WireMockServer](https://github.com/kshashov/cloud-experiments/blob/main/generator/src/test/java/com/github/kshashov/cloud/generator/client/FeignClientTasksProducerTest.java) for Feign service
 
 ## Other
+
 * Atlassian Jira Plugin ([market](https://marketplace.atlassian.com/apps/1218423/jitlab-connect), [repo](https://github.com/JitLabConnect/jitlabconnect.github.io))
 * Android Apps 
   * [Test project for Yandex](https://github.com/kshashov/Android-translate)
