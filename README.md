@@ -35,7 +35,7 @@ Services	| GitLab, GitHub, Travis CI, Jira, Youtrack
 ## Summary
 Highly  motivated  and  enthusiastic  Senior  Software  Development  Engineer  with  more  than  6  years  of software engineering experience in the development of entire web apps and back-end services. I try to follow development trends and often learn new languages and technologies. In addition to Java backed development I had experience in native Android, cross-platform development on Flutter, backend .Net/.Net Core development, and frontend development on VueJS. At the moment, I am interested mostly in Java/Kotlin development, but I am ready to consider full stack development in case of interesting offer. 
 
-In the last year, in addition to development, I have led team of 5 people (3 Java developers, front-end developer and QA).
+In the last year, in addition to development, I have led team of 6 people (4 Java developers, front-end developer and QA).
 
 In my free time I play computer games, improve my knowledge in English, study the piano from scratch.
 
@@ -51,15 +51,15 @@ Unfortunately, my commercial experience has nothing to do with open source, so I
 | - | - |
 | **GoSimple** | Provides a complete foodservice trade promotion management solution to small and mid-tier CPG manufacturing organizations |
 | *Responsibilities* | Involving in communicating with project managers and team members to clearly define scope of work and provide accurate schedule estimates, guidance and assistance to development and operational team members; Architectural design; Creating new screens and dashboards using Vaadin Flow, development of custom Vaadin components |
-| *Technologies & Libraries* | Java 11, Spring Boot 2.2, Vaadin 14 |
+| *Technologies & Libraries* | Java 11, Spring Boot 2.2, Vaadin 14, PostgreSQL |
 | --- | --- |
 | **Data Factory Services** | Provides the ability to create and execute scripts to generate events  by domain experts |
 | *Responsibilities* | Architectural design; Implementation of high-level API used to create scripts for loading, processing and storing event data |
-| *Technologies & Libraries* | .Net Core 3.0, C# 7.0 |
+| *Technologies & Libraries* | .Net Core 3.0, C# 7.0, SQL Server |
 | --- | --- |
 | **Data Service** | Calculates aggregations, arithmetic expressions and many others operations with time series |
 | *Responsibilities* | Architectural design; Adding new REST API methods, implementation of features to process time series, design and creation of database structures and objects; migration from .NET Framework to .Net Core |
-| *Technologies & Libraries* | .Net Core 3.0, .NET Framework 4.8, C# 8.0, SQL |
+| *Technologies & Libraries* | .Net Core 3.0, .NET Framework 4.8, C# 8.0, SQL Server, PostgreSQL |
 
 **July 2013 – August 2015** Software Developer
 
