@@ -159,6 +159,22 @@ Simple analog of [writing section of Puzzle English](https://puzzle-english.com/
     * `@PreAuthorize` in the [services](https://github.com/kshashov/Translates-API/blob/master/web/src/main/java/com/github/kshashov/translates/web/services/)
 * [Swagger](https://translate-it-api.herokuapp.com/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config)
 
+## Flutter Codenames ([demo](https://kshashov.github.io/codenames-web/), [repo](https://github.com/kshashov/flutter-codenames/))
+
+A simple implementation of [Codenames](https://en.wikipedia.org/wiki/Codenames_(board_game)) board game on [Flutter](https://flutter.dev/) & [Firebase](https://firebase.google.com/).
+> The main goal was to try the Flutter Web 
+
+![codenames web](https://github.com/kshashov/flutter-codenames/raw/master/docs/codenames_web.png "Web")
+
+* Flutter 2.8.1 stable channel
+  * Bloc architecture with `rxdart` and `provider` libraries
+  * Responsive layout depending on `MediaQuery`
+  * Support for Web and Android builds
+* Firebase real-time database as backend
+  * Support for 'online' player statuses
+* CI/CD
+    * Deployment: Github Pages
+
 ## TaskTracker ([demo](https://time-tracker1.herokuapp.com/), [repo](https://github.com/kshashov/TimeTracker))
 The application is a simple time tracker. All users can create projects, bind other users with specific roles to them. Users with the required permissions can create, modify and delete work logs in projects, view other people's logs, commit them to prohibit further changes.
 > The main goal was to try the Vaadin Flow
