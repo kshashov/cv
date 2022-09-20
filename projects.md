@@ -164,7 +164,7 @@ Simple analog of [writing section of Puzzle English](https://puzzle-english.com/
 A simple implementation of [Codenames](https://en.wikipedia.org/wiki/Codenames_(board_game)) board game on [Flutter](https://flutter.dev/) & [Firebase](https://firebase.google.com/).
 > The main goal was to try the Flutter Web 
 
-![codenames web](https://github.com/kshashov/flutter-codenames/raw/master/docs/codenames_web.png "Web")
+![codenames web](https://raw.githubusercontent.com/kshashov/flutter-codenames/main/docs/codenames_web.png "Web")
 
 * Flutter 2.8.1 stable channel
   * Bloc architecture with `rxdart` and `provider` libraries
