@@ -51,7 +51,7 @@ Unfortunately, my commercial experience has nothing to do with open source, so I
 | - | - |
 | **GoSimple** | Provides a complete foodservice trade promotion management solution to small and mid-tier CPG manufacturing organizations |
 | *Responsibilities* | Involving in communicating with project managers and team members to clearly define scope of work and provide accurate schedule estimates, guidance and assistance to development and operational team members; Architectural design; Creating new screens and dashboards using Vaadin Flow, development of custom Vaadin components |
-| *Technologies & Libraries* | Java 8, Spring Boot 2.2, Vaadin 14, PostgreSQL |
+| *Technologies & Libraries* | Java 8, Spring Boot 2.2, Vaadin 14, PostgreSQL, Selenide |
 | --- | --- |
 | **Data Factory Services** | Provides the ability to create and execute scripts to generate events  by domain experts |
 | *Responsibilities* | Architectural design; Implementation of high-level API used to create scripts for loading, processing and storing event data |
