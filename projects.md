@@ -223,7 +223,7 @@ In fact, this is not a project at all, it is just a collection of sub-projects u
 
 ## Other
 
-* Atlassian Jira Plugin ([market](https://marketplace.atlassian.com/apps/1218423/jitlab-connect), [repo](https://github.com/JitLabConnect/jitlabconnect.github.io))
+* Atlassian Jira Plugin ([market](https://marketplace.atlassian.com/apps/1218423/jitlab-connect), was sold with 140 server uses)
 * Android Apps 
   * [Test project for Yandex](https://github.com/kshashov/Android-translate)
   * [Drugs catalog on Kotlin with SQLite](https://github.com/kshashov/Drugs)
