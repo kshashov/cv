@@ -33,11 +33,9 @@ Services	| GitLab, GitHub, Travis CI, Jira, Youtrack
 * Vaadin: in-depth knowledge of Vaadin Flow  
 
 ## Summary
-Highly  motivated  and  enthusiastic  Senior  Software  Development  Engineer  with  more  than  6  years  of software engineering experience in the development of entire web apps and back-end services. I try to follow development trends and often learn new languages and technologies. In addition to Java backed development I had experience in native Android, cross-platform development on Flutter, backend .Net/.Net Core development, and frontend development on VueJS. At the moment, I am interested mostly in Java/Kotlin development, but I am ready to consider full stack development in case of interesting offer. 
+Highly  motivated  and  enthusiastic  Senior  Software  Development  Engineer  with  more  than  ten  years  of software engineering experience. I also led team of 6 people (4 backend, 1 frontend, and 2 automation QA) for the last 3 years. 
 
-In the last year, in addition to development, I have led team of 6 people (4 Java developers, front-end developer and QA).
-
-In my free time I play computer games, improve my knowledge in English, study the piano from scratch.
+I try to follow development trends and often learn new languages and technologies. In addition to Java backed development I had experience in native Android, cross-platform development on Flutter, backend .Net/.Net Core development, and frontend development on VueJS. At the moment, I am interested mostly in Java/Kotlin development, but I am ready to consider other options. 
 
 ## Projects
 Unfortunately, my commercial experience has nothing to do with open source, so I can only share my [pet projects](/projects.md) created while studying some technologies.
