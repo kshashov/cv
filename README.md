@@ -21,19 +21,18 @@ Services	| GitLab, GitHub, Travis CI, Jira, Youtrack
 
 ### Java-Related
 
-* Java Core: in-depth knowledge of 8-11 versions
+* Java Core: in-depth knowledge of 8+ versions
 * Kotlin: basics
 * Spring Boot:
-  * Core: DI, Bean Post Processor, Custom scope 
+  * Core: DI, Bean Post Processor
   * Web: REST Controller
   * Security: Basic, Oauth, JWT tokens
-  * Data: Entity, Entity Graph, Repository, Transaction, Flyway migration, Routing Datasource
-  * Cloud: Netflix stack basics
+  * Data: Entity, Entity Graph, Repository, Transaction, Routing Datasource
 * Tests: JUnit, Mockito
 * Vaadin: in-depth knowledge of Vaadin Flow  
 
 ## Summary
-Highly  motivated  and  enthusiastic  Senior  Software  Development  Engineer  with  more  than  ten  years  of software engineering experience. I also led team of 6 people (4 backend, 1 frontend, and 2 automation QA) for the last 3 years. 
+Highly  motivated  and  enthusiastic  Senior  Software  Development  Engineer  with  more  than  ten  years  of software engineering experience. I also led a team for the last 3 years (up to 4 backend, 1 frontend, and 2 automation QA). 
 
 I try to follow development trends and often learn new languages and technologies. In addition to Java backed development I had experience in native Android, cross-platform development on Flutter, backend .Net/.Net Core development, and frontend development on VueJS. At the moment, I am interested mostly in Java/Kotlin development, but I am ready to consider other options. 
 
