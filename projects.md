@@ -86,6 +86,26 @@ I covered 50% of the library. Mostly, it is the reflection usages, built-in reso
     * Code coverage: Jacoco -> Codecov
     * Deployment: Maven Central, JitPack
 
+## Pet Feeder ([repo](https://github.com/kshashov/pet-feeder))
+
+<img src="https://github.com/kshashov/pet-feeder/blob/main/img.png?raw=true" width="400px">
+<img src="https://github.com/kshashov/pet-feeder/blob/main/img_1.png?raw=true" width="400px">
+
+* Software
+   * Esp32
+      * Host Wifi to setup home wifi connection
+      * Get actual time from ntp server
+      * Provide REST endpoint
+      * Turn led according to the current state
+      * Run feeding when physical button is pressed     
+   * Flutter client app 
+* Hardware
+   * Esp32
+   * RGB Led
+   * Button
+   * Nema17 + a4988 driver
+   * MP1584EN dc dc buck converter + 5.5x2.1mm Female DC Power Plug  
+
 ## Scoped Methods Spring Boot Starter ([maven](https://search.maven.org/search?q=a:scoped-methods-spring-boot-starter), [repo](https://github.com/kshashov/scoped-methods))
 
 Provides an ability to use custom scopes over Spring bean methods. Supports both proxy and aspectj interception approaches, meta-annotations and overriden methods.
