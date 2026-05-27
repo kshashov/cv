@@ -195,6 +195,18 @@ A simple implementation of [Codenames](https://en.wikipedia.org/wiki/Codenames_(
 * CI/CD
     * Deployment: Github Pages
 
+## Flutter NoTalk ([repo](https://github.com/kshashov/notalk))
+
+NoTalk is a voice notes diary with automatic speech-to-text transcription. Record voice messages and let the app convert them into searchable text notes with tags and color labels. Supports both offline Whisper AI model and live device recognition. All data is stored locally on the device — no data is collected or transmitted to third parties.
+
+![NoTalk](https://github.com/kshashov/notalk/blob/main/docs/filters.jpg?raw=true) 
+
+* Flutter (Dart)
+   * sqflite (SQLite)
+   * whisper_flutter_new (Whisper AI)
+   * speech_to_text
+   * flutter_sound
+
 ## TaskTracker ([demo](https://time-tracker1.herokuapp.com/), [repo](https://github.com/kshashov/TimeTracker))
 The application is a simple time tracker. All users can create projects, bind other users with specific roles to them. Users with the required permissions can create, modify and delete work logs in projects, view other people's logs, commit them to prohibit further changes.
 > The main goal was to try the Vaadin Flow
